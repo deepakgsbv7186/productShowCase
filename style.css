@@ -1,0 +1,72 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(49, 46, 46);
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    display:flex;
+    padding: 50px;
+}
+
+
+.leftMenu{
+    flex:1;
+    /* padding: 50px; */
+}
+.leftMenu #search{
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+}
+.leftMenu input[type=text]{
+    background-color: rgb(49, 46, 46);
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+}
+.leftMenu h2{
+    padding: 10px;
+    margin: 20px 0 10px 0;
+    font-weight: 300;
+}
+.leftMenu .cats{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftMenu .cats .cat{
+    padding-left: 20px;
+    /* padding: 10px; */
+    cursor: pointer;
+}
+
+
+.content{
+    flex:4;
+}
+/* for image -> Rendered size: 258 × 327 px */
+.products{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.product{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product img{
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+}
+.product .pdetails{
+    margin-top: -30px;
+}
